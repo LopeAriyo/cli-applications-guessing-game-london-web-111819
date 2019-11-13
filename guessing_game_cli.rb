@@ -12,11 +12,13 @@ def run_guessing_game
   end
 #  else
     #puts "/Sorry! The computer guessed #{num}./"
-    #binding.pry
+    #
   #end
 
   if user_input == "exit"
     puts "/Goodbye!"
   end
+
+  binding.pry
 
 end
