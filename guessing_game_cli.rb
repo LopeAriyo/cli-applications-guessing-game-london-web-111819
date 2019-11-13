@@ -7,7 +7,7 @@ def run_guessing_game
   puts = "Enter a number between 1 and 6"
   user_input = gets.chomp
 
-  if user_input.to_i == num
+  if user_input == num.to_s
     puts "You guessed the correct number!"
   end
 #  else
