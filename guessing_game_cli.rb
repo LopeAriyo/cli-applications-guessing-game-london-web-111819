@@ -7,17 +7,12 @@ def run_guessing_game
   puts = "Guess a number between 1 and 6"
   user_input = gets.chomp.to_s
 
-  correct_guess = "You guessed the correct number!"
-  incorrect_guess = "Sorry! The computer guessed #{num}."
-
   if user_input == num
-    puts correct_guess
-    return correct_guess
+    return "You guessed the correct number!"
   elsif user_input != num
-    puts incorrect_guess
-    return incorrect_guess
+    return "Sorry! The computer guessed #{num}."
   elsif user_input == "exit"
-    return "Goodbye!"
+    puts "Goodbye!"
   end
 
 end
